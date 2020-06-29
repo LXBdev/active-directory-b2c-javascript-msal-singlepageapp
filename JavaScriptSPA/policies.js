@@ -4,15 +4,15 @@
 
 const b2cPolicies = {
     names: {
-        signUpSignIn: "b2c_1_susi",
-        forgotPassword: "b2c_1_reset"
+        signUpSignIn: "B2C_1A_Tapio_Signin",
+        forgotPassword: "B2C_1A_Tapio_ResetPW"
     },
     authorities: {
         signUpSignIn: {
-            authority: "https://login.mytapio.one/tapiousers.onmicrosoft.com/b2c_1a_tapio_signin",
+            authority: "https://login.mytapio.one/tapiousers.onmicrosoft.com/B2C_1A_Tapio_Signin",
         },
         forgotPassword: {
-            authority: "https://login.mytapio.one/tapiousers.onmicrosoft.com/b2c_1a_tapio_ResetPW",
+            authority: "https://login.mytapio.one/tapiousers.onmicrosoft.com/B2C_1A_Tapio_ResetPW",
         },
     },
 }

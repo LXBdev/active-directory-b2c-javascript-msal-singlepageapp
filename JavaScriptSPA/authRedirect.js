@@ -26,10 +26,10 @@ function authRedirectCallBack(error, response) {
     // We need to reject id tokens that were not issued with the default sign-in policy.
     // "acr" claim in the token tells us what policy is used (NOTE: for new policies (v2.0), use "tfp" instead of "acr")
     // To learn more about b2c tokens, visit https://docs.microsoft.com/en-us/azure/active-directory-b2c/tokens-overview
-    if (response.tokenType === "id_token" && response.idToken.claims['acr'] !== b2cPolicies.names.signUpSignIn) {
+    if (response.tokenType === "id_token" && response.idToken.claims['tfp'] !== b2cPolicies.names.signUpSignIn) {
       myMSALObj.logout();
       window.alert("Password has been reset successfully. \nPlease sign-in with your new password.");
-    } else if (response.tokenType === "id_token" && response.idToken.claims['acr'] === b2cPolicies.names.signUpSignIn) {
+    } else if (response.tokenType === "id_token" && response.idToken.claims['tfp'] === b2cPolicies.names.signUpSignIn) {
       console.log("id_token acquired at: " + new Date().toString());
 
       if (myMSALObj.getAccount()) {
