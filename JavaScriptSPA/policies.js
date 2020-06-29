@@ -9,10 +9,10 @@ const b2cPolicies = {
     },
     authorities: {
         signUpSignIn: {
-            authority: "https://fabrikamb2c.b2clogin.com/fabrikamb2c.onmicrosoft.com/b2c_1_susi",
+            authority: "https://login.mytapio.one/tapiousers.onmicrosoft.com/b2c_1a_tapio_signin",
         },
         forgotPassword: {
-            authority: "https://fabrikamb2c.b2clogin.com/fabrikamb2c.onmicrosoft.com/b2c_1_reset",
+            authority: "https://login.mytapio.one/tapiousers.onmicrosoft.com/b2c_1a_tapio_ResetPW",
         },
     },
 }

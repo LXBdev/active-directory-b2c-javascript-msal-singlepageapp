@@ -6,7 +6,7 @@
  * */
 const msalConfig = {
   auth: {
-    clientId: "e760cab2-b9a1-4c0d-86fb-ff7084abd902",
+    clientId: "a76b9dc0-aa0f-4088-98ed-8e34b07c9c4b", // Tapiousers
     authority: b2cPolicies.authorities.signUpSignIn.authority,
     validateAuthority: false
   },
